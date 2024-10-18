@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Tim Sống Động</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        svg {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Tui yêu em rất nhiều</h1>
+        <svg width="300" height="250" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+            <!-- Định nghĩa gradient -->
+            <defs>
+                <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="30%">
+                    <stop offset="0%" style="stop-color:#ff6666;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+                </radialGradient>
+            </defs>
+            <!-- Vẽ trái tim với chiều cao ngắn lại -->
+            <path d="
+                M 100 40 
+                C 70 10, 10 60, 100 140 
+                C 190 60, 130 10, 100 40 
+                Z" 
+                fill="url(#grad1)" />
+        </svg>
+    </div>
+</body>
+</html>
